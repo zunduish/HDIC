@@ -1,0 +1,71 @@
+.homeBanner {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    //img {
+    //  //display: block;
+    //  width: 100%;
+    //  height: 100%;
+    //  object-fit: cover;
+    //}
+  }
+  .swiper-pagination-bullet-active {
+    background: #F44508 ;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet {
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,7px));
+    opacity: var(--swiper-pagination-bullet-inactive-opacity,.4);
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,7px));
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px);
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    left: auto;
+    right: 2% !important;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 2% !important;
+    right: auto;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 10px !important;
+    font-weight: 900 !important;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: black !important;
+    font-size: 8px !important;
+    background: white !important;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: var(--swiper-navigation-size);
+    justify-content: center;
+    margin-top: calc(0px - var(--swiper-navigation-size)/2);
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/20*20) !important;
+    z-index: 10;
+    border: 1px solid white!important;
+    border-radius: 50% !important;
+  }
+}

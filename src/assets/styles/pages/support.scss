@@ -1,0 +1,51 @@
+.TICKETS{
+  .swiper-autoheight .swiper-wrapper {
+    padding: 148px 0 0 0 !important;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    cursor: pointer;
+    display: flex;
+    height: var(--swiper-navigation-size);
+    justify-content: center;
+    margin-top: calc(0px - var(--swiper-navigation-size)/2);
+    position: absolute;
+    top: 9% !important;
+    width: calc(var(--swiper-navigation-size)/44*27);
+    z-index: 10;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    width: 38px !important;
+    height: 38px !important;
+    left: auto;
+    right: 45px !important;
+    border: 1px solid #D4D4D4 !important;
+    border-radius: 36px !important;
+  }
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    width: 38px !important;
+    height: 38px !important;
+    left: auto !important;
+    right: 0;
+    border: 1px solid #D4D4D4 !important;
+    border-radius: 36px !important;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    font-size: 8px !important;
+    font-weight: 900 !important;
+    color: #000000 !important;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: "prev";
+    font-size: 8px !important;
+    font-weight: 900 !important;
+    color: #919191 !important;
+  }
+  .swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    width: 160px !important;
+    margin-right: 80px !important;
+  }
+}

@@ -1,0 +1,29 @@
+/**********  TEXT-COLOR  **********/
+.primary-color {
+  color: $primary-color;
+}.primary-color:hover {
+   color: $primary-color;
+ }
+.black-color {
+  color: $black-color;
+}
+.gray-color {
+  color: $gray-color;
+}
+.secondary-color {
+  color: $second-color;
+}
+.maintext {
+  background: linear-gradient(90deg, #EEA925 49.59%, #0DB3A8 49.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+/**********  BACKGROUND  **********/
+.primary-background{
+  background: $primary-color;
+}
+.secondary-background {
+  background: $second-color;
+}
+

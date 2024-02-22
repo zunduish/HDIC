@@ -1,0 +1,88 @@
+
+/**********  TEXT-COLOR  **********/
+#topnav {
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: all .5s ease;
+}
+#topnav{
+  .mobile_d_none{
+    display: none!important;
+  }
+}
+
+/**********  TEXT-COLOR  **********/
+.black-color {
+  color: $black-color;
+}
+.gray-color {
+  color: $gray-color;
+}
+
+/**********  MENU-ACTIVE  **********/
+.menu-active{
+  a{
+    color: $black-color;
+    font-size: 17px;
+    font-weight: bold;
+    &.router-link-active {
+      color: $gray-color;
+    }
+  }
+}
+
+/**********  BUTTON  **********/
+a.ant-btn {
+  padding-top: 0!important;
+  line-height: 0!important;
+}
+.button-login {
+  .ant-btn-primary {
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    text-shadow: none;
+    background: $primary-color;
+    box-shadow: none;
+    border-radius: 9999px;
+    min-width: 0 !important;
+    padding: 0 32px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    height: 40px;
+  }
+  .ant-btn-primary:active, .ant-btn-primary:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+/**********  change_color  **********/
+//.change_color {
+//  background-color:  rgba(255, 255, 255, 0.9) !important;
+//  box-shadow: 0 4px 4px rgba(30, 41, 59, 0.1);
+//  backdrop-filter: blur(20px);
+//}
+
+/**********  ant-dropdown-menu  **********/
+.ant-dropdown-menu {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.ant-dropdown-menu-title-content {
+  flex: auto;
+  white-space: nowrap;
+  padding: 6px 24px 6px 24px!important;
+  border-radius: 8px;
+}
+.ant-dropdown-menu-title-content:hover {
+  color: $primary-color;
+}
+
+
+
+
+

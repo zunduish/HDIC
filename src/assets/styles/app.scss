@@ -1,0 +1,67 @@
+@import "./_variables";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/home";
+@import "./pages/homebanner";
+@import "./pages/support";
+@import "./pages/slider";
+
+
+/* ------- image css start -------- */
+.ant-image-preview-img {
+  display: inline-block!important;
+}
+/* ------- image css end -------- */
+
+.ctvet_pagination {
+  .ant-select-selector, .ant-pagination-options{
+    display: none !important;
+  }
+  .ant-pagination-item a {
+    color: $gray-color;
+  }
+  .ant-pagination-item:hover a {
+    color: $black-color;
+  }
+  .ant-pagination-item-active a {
+    color: #FFFFFF;
+    background: $primary-color;
+    border-radius: 40px;
+  }
+  .ant-pagination-item {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 40px;
+  }
+  .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 12px;
+    justify-items: center!important;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 99px;
+  }
+  .ant-pagination-prev:hover .ant-pagination-item-link, .ant-pagination-next:hover .ant-pagination-item-link {
+    color: $black-color;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+  }
+  .anticon svg {
+    display: flex;
+  }
+}
+
+.mobile_header_border{
+  border-color: $primary-color;
+}
+
+.map_cont{
+  .leaflet-control-attribution{
+    display: none !important;
+  }
+}
